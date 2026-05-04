@@ -1,5 +1,13 @@
 version: '3.9'
 services:
+  app:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    container_name: demo-app
+    ports:
+      - "8080:8080"
+
   #Prometheus
   prometheus:
     image: prom/prometheus:v2.53.1
