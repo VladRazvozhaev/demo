@@ -20,7 +20,7 @@ jobs:
           java-version: 21
 
       - name: Run tests
-        run: mvn clean test jacoco:report coveralls:report
+        run: mvn clean test jacoco:report
 
       - name: Upload to Coveralls
         uses: coverallsapp/github-action@v2
